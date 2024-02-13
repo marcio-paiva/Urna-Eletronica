@@ -4,6 +4,8 @@ public class Cargo {
     
     private String nomeCargo;
     private int votosBranco;
+    private int votosNulo;
+
     private Candidato[] candidatos;
 
     public Cargo(String nomeCargo){
@@ -33,9 +35,16 @@ public class Cargo {
         return this.candidatos;
     }
 
+    public void setVotosNulo() {
+        this.votosNulo++;
+    }
+    public int getVotosNulo() {
+        return votosNulo;
+    }
+
     public void imprimeCandidatos(){
         for(int i=0; i<candidatos.length; i++){
-            System.out.print("Nome: " + candidatos[i].getNome() + " - Numero: " + candidatos[i].getNumero() + "\n");
+            System.out.print(candidatos[i].getNome() + " | " + candidatos[i].getNumero() + " - Votos: " + candidatos[i].getVotos() + "\n");
             
         }
     }
