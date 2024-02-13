@@ -35,7 +35,7 @@ public class Cargo {
 
     public void imprimeCandidatos(){
         for(int i=0; i<candidatos.length; i++){
-            System.out.print(candidatos[i].getNome() + " | " + candidatos[i].getNumero() + " - Votos: " + candidatos[i].getVotos() + "\n");
+            System.out.print("Nome: " + candidatos[i].getNome() + " - Numero: " + candidatos[i].getNumero() + "\n");
             
         }
     }
