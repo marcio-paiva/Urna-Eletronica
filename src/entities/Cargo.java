@@ -1,24 +1,23 @@
 package entities;
 
-public class Cargo {
+public class Cargo extends Identificacao{
     
-    private String nomeCargo;
     private int votosBranco;
     private int votosNulo;
 
     private Candidato[] candidatos;
 
     public Cargo(String nomeCargo){
-        setNomeCargo(nomeCargo);
+        super(nomeCargo);
         this.votosBranco = 0;
         System.out.println("Cargo criado com sucesso.\n");
     }
 
     public void setNomeCargo(String nomeCargo){
-        this.nomeCargo = nomeCargo;
+        super.setNome(nomeCargo);
     }
     public String getNomeCargo(){
-        return this.nomeCargo;
+        return super.getNome();
     }
 
     public void setVotosBranco(){

@@ -1,23 +1,22 @@
 package entities;
 
-public class Candidato {
+public class Candidato extends Identificacao{
 
-    private String nome;
     private int numero; //número para votar
     private int votos;
 
     public Candidato(String nome, int numero){
-        setNome(nome);
+        super(nome);
         setNumero(numero);
         this.votos = 0;
         System.out.println("Candidato registrado com sucesso.\n");
     }
 
     public void setNome(String nome){
-        this.nome = nome;
+        super.setNome(nome);
     }
     public String getNome(){
-        return this.nome;
+        return super.getNome();
     }
 
     public void setNumero(int numero){

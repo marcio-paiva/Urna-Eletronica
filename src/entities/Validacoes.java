@@ -7,6 +7,9 @@ public class Validacoes {
     private boolean votoValido = false; 
     private boolean numeroValido = true;
     private boolean finalizarVotacao = false;
+    private boolean entradaValida = false;
+    private boolean opcaoValida = false;
+    private boolean confirmacaoValida = false;
 
     public Validacoes(){}
 
@@ -43,5 +46,26 @@ public class Validacoes {
     }
     public boolean getFinalizarVotacao() {
         return finalizarVotacao;
-    }  
+    } 
+
+    public void setEntradaValida(boolean entradaValida) {
+        this.entradaValida = entradaValida;
+    }
+    public boolean getEntradaValida() {
+        return entradaValida;
+    } 
+
+    public void setOpcaoValida(boolean opcaoValida) {
+        this.opcaoValida = opcaoValida;
+    }
+    public boolean getOpcaoValida() {
+        return opcaoValida;
+    } 
+
+    public void setConfirmacaoValida(boolean confirmacaoValida) {
+        this.confirmacaoValida = confirmacaoValida;
+    }
+    public boolean getConfirmacaoValida() {
+        return confirmacaoValida;
+    } 
 }
